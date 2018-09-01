@@ -1,29 +1,37 @@
-# Site settings
-title:          冰笑
-description:    "NIce"
-baseurl:        "/"
-url:            "https://niehxiaobin.github.io"
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+highlights: pygments
+url: 
+# cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+lsi: false
+safe: true
+timezone: Asia/Shanghai
+auto: false 
 
-# Author
-author:
-  name:         NiehXiaoBin
-  url:          https://niehxiaobin.github.io
-  email:        NiehXiaoBin@163.com
+paginate: 8
+paginate_path: "page:num"
 
-# Build settings
-markdown:       kramdown
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
 
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
+JB :
+  IMAGE_PATH : http://coolshell.info/images
 
-# Gems
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  # - jemoji #Uncomment this to allow emoji in your post
+# presonal config
+domain: https://niehxiaobin.github.com
+title: NIce-聂晓斌
+description: NIce
+author: NIce
+email: NiehXiaoBin@163.com
+github: NiehXiaoBin
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+config:
+  js_dir:
+  img_dir:
+  css_dir:
