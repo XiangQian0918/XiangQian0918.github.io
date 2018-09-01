@@ -5,8 +5,8 @@ date:   2018-09-01 18:05:55 +0800
 categories: jekyll update
 ---
 … 从下面的截图可以看到：
-![有帮助的截图]({{ site.url }}/assets/imgs/bg.png)  
-…你可以直接 [下载上图]({{ site.url }}/assets/imgs/bg.png).   
+![有帮助的截图]({{ site.url }}/assets/imgs/bg.jpg)  
+…你可以直接 [下载上图]({{ site.url }}/assets/imgs/bg.jpg).   
 
 ---
 代码高亮  
