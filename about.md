@@ -1,14 +1,10 @@
 ---
-layout: default
-title: "关于：About"
+layout: post
+title: "About"
+author: "NIce"
+permalink: /about/
 ---
 
-## 个人简介：
+## NIce
 
-* 冰笑
-* Web后台开发
-* 来自山东 现居北京
-
-## 联系方式
-邮箱: NiehXiaoBin@163.com
 
