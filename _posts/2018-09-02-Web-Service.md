@@ -62,6 +62,9 @@ keywords: java, web service
             System.out.println(hello);
         }   
     ```
+--- 
+
+
 ## 二、 使用 cxf
 ### 1、服务端
 1. maven 依赖
@@ -157,6 +160,8 @@ keywords: java, web service
     + web context : ‘/’ 
     + port: 8080
     + wsdl: `http://localhost:8080/ws/hello`
+    
+
 ### 2、 客户端
 1. maven 依赖
     ```xml
