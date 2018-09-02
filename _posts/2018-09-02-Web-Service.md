@@ -119,12 +119,18 @@ keywords: java, web service
     <beans xmlns="http://www.springframework.org/schema/beans"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:jaxws="http://cxf.apache.org/jaxws"
-           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+           xsi:schemaLocation="
+               http://www.springframework.org/schema/beans 
+               http://www.springframework.org/schema/beans/spring-beans.xsd 
+               http://cxf.apache.org/jaxws 
+               http://cxf.apache.org/schemas/jaxws.xsd">
     
         <bean class="n.ice.ws.HelloWS"
               id="helloWS"/>
     
-        <jaxws:server id="helloService" serviceClass="n.ice.ws.IHelloService" address="/hello">
+        <jaxws:server id="helloService" 
+           serviceClass="n.ice.ws.IHelloService" 
+           ddress="/hello">
             <jaxws:serviceBean>
                 <ref bean="helloWS" />
             </jaxws:serviceBean>
@@ -137,7 +143,9 @@ keywords: java, web service
     <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns="http://java.sun.com/xml/ns/javaee"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd "
+             xsi:schemaLocation="
+               http://java.sun.com/xml/ns/javaee 
+               http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd "
              version="2.5">
         <listener>
             <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -202,7 +210,11 @@ keywords: java, web service
     <beans xmlns="http://www.springframework.org/schema/beans"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:jaxws="http://cxf.apache.org/jaxws"
-           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+           xsi:schemaLocation="
+               http://www.springframework.org/schema/beans 
+               http://www.springframework.org/schema/beans/spring-beans.xsd 
+               http://cxf.apache.org/jaxws 
+               http://cxf.apache.org/schemas/jaxws.xsd">
     
         <jaxws:client id="helloService"
                       serviceClass="n.ice.ws.IHelloService"
