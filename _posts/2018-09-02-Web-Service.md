@@ -162,7 +162,7 @@ keywords: java, web service
     + wsdl: `http://localhost:8080/ws/hello`
     
 
-### 2、 客户端
+### 2、客户端
 1. maven 依赖
     ```xml
     <dependencies>
