@@ -245,3 +245,6 @@ keywords: java, web service
         }
     }
     ```
+
+1. 注
+    > * 当使用cxf和wsimport命令并改变package时，保留service的注解。
